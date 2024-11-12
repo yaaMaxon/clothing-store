@@ -1,0 +1,61 @@
+.bagsBox {
+  display: flex;
+
+  padding: 23px 50px 23px 80px;
+  border-bottom: solid #f6f7f8 3px;
+}
+
+.itemValue {
+  color: #22262a;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.itemProduct {
+  margin-right: 300px;
+}
+
+.itemPrice {
+  margin-right: 100px;
+}
+
+.itemQty {
+  margin-right: 120px;
+}
+
+.totalBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 225px;
+  margin: 90px auto 150px auto;
+
+  border-top: solid #f6f7f8 3px;
+}
+
+.totalPriceBox {
+  display: flex;
+  gap: 20px;
+  padding-top: 28px;
+}
+
+.totalPrice {
+  color: #22262a;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.checkBtn {
+  padding: 16px 70px 16px 70px;
+  background-color: #33a0ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 7px;
+
+  cursor: pointer;
+}

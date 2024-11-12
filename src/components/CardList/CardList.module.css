@@ -1,0 +1,7 @@
+.cardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 34.5px;
+  row-gap: 35.5px;
+}

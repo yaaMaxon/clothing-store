@@ -1,0 +1,34 @@
+.filterBox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  width: 270px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+
+  background-color: #f6f7f8;
+  border-radius: 7px;
+}
+
+.rangerBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangerBoxValue {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.priceBox {
+  display: flex;
+  gap: 5px;
+}
+
+.priceTitle {
+  color: #22262a;
+  font-size: 18px;
+  font-weight: 500;
+}

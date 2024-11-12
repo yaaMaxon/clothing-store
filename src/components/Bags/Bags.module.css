@@ -1,0 +1,7 @@
+.bagsList {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 60px;
+  padding-left: 50px;
+}

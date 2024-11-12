@@ -1,0 +1,77 @@
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 200px;
+  height: 320px;
+
+  border: solid #f6f7f8 3px;
+  border-top-width: 0;
+}
+
+.cardItem:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardImg {
+  width: 206px;
+  height: 170px;
+
+  border-radius: 5px;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+.cardTitle {
+  color: #223263;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0.5px;
+
+  margin-top: 15px;
+}
+
+.cardPrice {
+  color: #40bfff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 32.4px */
+  letter-spacing: 0.5px;
+}
+
+.cardBtn {
+  display: flex;
+  gap: 10px;
+
+  transform: translateY(0);
+
+  padding: 10px 20px 10px 15px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #33a0ff;
+  background-color: #bcddfe;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.cardBtn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0px 10px 30px 0px rgba(64, 191, 255, 0.24);
+}
