@@ -25,22 +25,22 @@ const CartItem = ({data}) => {
         dispatch(removeItemFromCart(id))
     }
 
-    return <li className={css.cardItem}>
-        <div className={css.cardImgBox}>
+    return <tr className={css.tableBodyItem}>
+        <td className={css.tableBodyImgBox}>
           <MdClose className={css.closeBtn} onClick={handleRemoveItem}/>
           <img src={img} alt={title} className={css.cardImg}/>
-          <h2 className={`${css.cardValue} ${css.cardTitle}`}>{title}</h2>
-        </div>
-          <div className={css.controlPriceBox}>
-            <span className={css.cardValue}>${totalPrice.toFixed(2)}</span>
-            <div className={css.controlQtyBox}>
-                <span className={css.signValue} onClick={decreaseCounterValue}>-</span>
-                <span className={css.cardValue}>{quantity}</span>
-                <span className={css.signValue} onClick={increaseCounterValue}>+</span>
-            </div>
-            <span className={css.cardValue}>${price}</span>
-          </div>
-    </li>
+          <h2 className={css.cardValue}>{title}</h2>
+        </td>
+        <td className={`${css.cardValue} ${css.cardTotalPrice}`}>${totalPrice.toFixed(2)}</td>
+          <td>  
+            <ul className={css.controlQtyBox}>
+                <li className={css.signValue} onClick={decreaseCounterValue}>-</li>
+                <li className={css.cardValue}>{quantity}</li>
+                <li className={css.signValue} onClick={increaseCounterValue}>+</li>
+            </ul>
+          </td>
+        <td className={css.cardValue}>${price}</td>
+    </tr>
 }
 
 export default CartItem;

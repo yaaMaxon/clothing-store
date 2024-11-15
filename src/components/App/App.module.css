@@ -5,8 +5,9 @@
 
 .navigation {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+  gap: 300px;
 }
 
 .navItem {
@@ -19,10 +20,48 @@
   text-decoration: none;
 }
 
+.viewsBox {
+  display: flex;
+  gap: 90px;
+}
+
 .navItem:hover {
   color: #40bfff;
 }
 
 .navItem.active {
   color: #40bfff;
+}
+
+.headerLinkBox {
+  display: flex;
+  justify-content: center;
+
+  background-color: #f6f7f8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+.headerLinkItem {
+  color: #40bfff;
+  font-size: 18px;
+  font-weight: 400;
+
+  text-decoration: none;
+}
+
+.headerLinkItem.active {
+  color: #262626;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #22262a;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
 }

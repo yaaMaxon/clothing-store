@@ -8,15 +8,24 @@ const Cart = () => {
     const total = bags.reduce((acc, {quantity, price}) => { return acc += quantity * price}, 0);
 
     return (   
-        <div>
-          <div className={css.bagsBox}>
-            <span className={`${css.itemValue} ${css.itemProduct}`}>Product</span>
-            <span className={`${css.itemValue} ${css.itemPrice}`}>Price</span>
-            <span className={`${css.itemValue} ${css.itemPrice}`}>Quantity</span>
-            <span className={css.itemValue}>Unit Price</span>
+        <>
+        {<Bags items={bags}/>}
+        <div className={css.calculationBox}>
+          <div>
+            <input type="text" placeholder='Voucher code' className={css.vaucherInput}/>
+            <button type="button" className={css.vaucherBtn}>Redeem</button>
           </div>
-         {<Bags items={bags}/>}
           <div className={css.totalBox}>
+            <div className={css.subtotalBox}>
+                <div className={css.subtotalItemsBox}>
+                    <span className={css.subtotalItems}>Subtotal</span>
+                    <span className={css.subtotalItems}>${total.toFixed(2)}</span>
+                </div>
+                <div className={css.subtotalItemsBox}>
+                    <span className={css.subtotalItems}>Coupon</span>
+                    <span className={css.subtotalItems}>No</span>
+                </div>
+            </div>
             <div className={css.totalPriceBox}>
                 <span className={css.totalPrice}>TOTAL</span>
                 <span className={css.totalPrice}>${total.toFixed(2)}</span>
@@ -24,6 +33,7 @@ const Cart = () => {
             <button type="button" className={css.checkBtn}>Check out</button>
           </div>
         </div>
+        </>
      );
 }
  

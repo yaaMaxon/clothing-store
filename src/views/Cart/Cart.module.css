@@ -1,44 +1,40 @@
-.bagsBox {
+.calculationBox {
   display: flex;
-
-  padding: 23px 50px 23px 80px;
-  border-bottom: solid #f6f7f8 3px;
-}
-
-.itemValue {
-  color: #22262a;
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.itemProduct {
-  margin-right: 300px;
-}
-
-.itemPrice {
-  margin-right: 100px;
-}
-
-.itemQty {
-  margin-right: 120px;
+  justify-content: space-around;
+  margin: 90px 0 150px 0;
 }
 
 .totalBox {
   display: flex;
   flex-direction: column;
+  gap: 25px;
+
+  width: 350px;
+}
+
+.subtotalBox {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 
-  width: 225px;
-  margin: 90px auto 150px auto;
+  padding-bottom: 24px;
+  border-bottom: solid #f6f7f8 3px;
+}
 
-  border-top: solid #f6f7f8 3px;
+.subtotalItemsBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtotalItems {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .totalPriceBox {
   display: flex;
-  gap: 20px;
-  padding-top: 28px;
+  justify-content: space-between;
 }
 
 .totalPrice {
@@ -48,6 +44,8 @@
 }
 
 .checkBtn {
+  transform: translateY(0);
+
   padding: 16px 70px 16px 70px;
   background-color: #33a0ff;
   color: #fff;
@@ -56,6 +54,36 @@
 
   border: none;
   border-radius: 7px;
+
+  cursor: pointer;
+}
+
+.checkBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 30px 0px rgba(64, 191, 255, 0.24);
+}
+
+.vaucherInput {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border: solid #f1f3f4 3px;
+  border-right: none;
+
+  padding: 15px;
+}
+
+.vaucherBtn {
+  padding: 17px 21px 17px 21px;
+  background-color: #33a0ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
 
   cursor: pointer;
 }

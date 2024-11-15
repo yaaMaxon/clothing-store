@@ -1,16 +1,25 @@
-.cardItem {
+.tableBodyItem {
   display: flex;
-
+  align-items: center;
+  padding-top: 60px;
   padding-bottom: 50px;
   border-bottom: solid #f6f7f8 3px;
 }
 
-.cardImgBox {
+.tableBodyImgBox {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 
-  margin-right: 55px;
+  width: 380px;
+  margin-right: 70px;
+}
+
+.closeBtn {
+  fill: #ff4252;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .cardImg {
@@ -26,15 +35,8 @@
   font-weight: 400;
 }
 
-.cardTitle {
-  width: 180px;
-}
-
-.controlPriceBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
+.cardTotalPrice {
+  margin-right: 140px;
 }
 
 .controlQtyBox {
@@ -42,20 +44,15 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 100px;
-  height: 40px;
+  padding: 10px;
   background-color: #f6f7f8;
   border-radius: 5px;
+
+  margin-right: 170px;
 }
 
 .signValue {
   color: #33a0ff;
   cursor: pointer;
-}
-
-.closeBtn {
-  fill: #ff4252;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
+  padding: 8px;
 }

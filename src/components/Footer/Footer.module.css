@@ -1,0 +1,51 @@
+.footerBox {
+  padding: 150px 140px 50px 140px;
+  background-color: #bcddfe;
+}
+
+.footerTextInfo {
+  color: #22262a;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footerList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 180px;
+  row-gap: 70px;
+
+  padding-bottom: 70px;
+  border-bottom: solid #f6f7f8 2px;
+}
+
+.footerItem {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 115px;
+}
+
+.socialNetBox {
+  display: flex;
+  gap: 40px;
+}
+
+.facebook {
+  color: #385c8e;
+}
+
+.twitter {
+  color: #03a9f4;
+}
+
+.companyInfo {
+  display: block;
+  color: #c1c8ce;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-top: 30px;
+}

@@ -1,24 +1,25 @@
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { getCardSelector } from "../../store/selectors";
 import FilterComponent from "../../components/FilterComponent/FilterComponent";
 import CardList from "../../components/CardList/CardList";
+import { getCardItems } from "../../store/operations";
 
 
 const Home = () => {
-    const cards = useSelector(getCardSelector);
-console.log(cards)
-    const min = Math.min(...cards.map(({price}) => price));
-    const max = Math.max(...cards.map(({price}) => price));
+    const dispatch = useDispatch()
 
-    // const visibleItems = card.filter((dataFilter) => {
-    //     return 
-    // })
+    const {cards, isLoading, error} = useSelector(getCardSelector);
+
+     useEffect(() => {
+        dispatch(getCardItems());
+  }, [dispatch]);
 
     return (
-        <>  
-        <FilterComponent min={min} max={max}/>
-        <CardList cards={cards} />
-        </>)
+        <section style={{paddingBottom: '40px'}}>  
+        <FilterComponent/>
+        <CardList cards={cards} isLoading={isLoading} error={error} />
+        </section>)
         
 }
  

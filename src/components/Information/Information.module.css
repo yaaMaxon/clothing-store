@@ -1,0 +1,120 @@
+.informationText {
+  color: #22262a;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.aboutCompanyList {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.aboutCompanyItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  width: 200px;
+}
+
+.aboutCompanyTitle {
+  color: #22262a;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.companyItemSvg {
+  width: 65px;
+  height: 65px;
+}
+
+.newsBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.newsBoxTitle {
+  color: #22262a;
+  font-size: 34px;
+  font-weight: 600;
+
+  margin-bottom: 70px;
+}
+
+.newsBoxList {
+  display: flex;
+}
+
+.newsBoxListBox {
+  display: flex;
+  flex-direction: column;
+
+  width: 190px;
+}
+
+.newsBoxListItem {
+  display: flex;
+}
+
+.newsBoxListDate {
+  color: #c1c8ce;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.newsBoxListTitle {
+  color: #22262a;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.featuredTitle {
+  color: #262626;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.starItem {
+  cursor: pointer;
+}
+
+.featuredPrice {
+  color: #ff4858;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.searchQueryBox {
+  text-align: center;
+  margin-bottom: 95px;
+}
+
+.searchQueryInput {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  border: solid #bcddfe 3px;
+  border-right: none;
+
+  padding: 20px;
+}
+
+.searchQueryBtn {
+  padding: 21.5px 27px 23px 27px;
+  background-color: #40bfff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+
+  border: none;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+
+  cursor: pointer;
+}

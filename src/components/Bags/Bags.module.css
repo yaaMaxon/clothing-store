@@ -1,7 +1,33 @@
-.bagsList {
+.tableBox {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableHead {
+  display: block;
+  padding: 0px 50px 23px 50px;
+  border-bottom: solid #f6f7f8 3px;
+}
+
+.tableHeadList {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding-top: 60px;
-  padding-left: 50px;
+}
+
+.tableHeadItem {
+  color: #22262a;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.tableHeadItemProduct {
+  margin-right: 305px;
+}
+
+.tableHeadItemPrice {
+  margin-right: 150px;
+}
+
+.tableHeadItemQuantity {
+  margin-right: 150px;
 }
