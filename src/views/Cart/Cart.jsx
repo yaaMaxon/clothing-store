@@ -2,12 +2,16 @@ import { useSelector } from 'react-redux';
 import { getCartItemsSelector } from '../../store/selectors';
 import css from './Cart.module.css'
 import Bags from '../../components/Bags/Bags';
+import NoFoundComponent from '../../components/NoFoundComponent/NoFoundComponent';
 
 const Cart = () => {
     const bags = useSelector(getCartItemsSelector);
     const total = bags.reduce((acc, {quantity, price}) => { return acc += quantity * price}, 0);
-
-    return (   
+    
+    console.log(bags.length)
+    return (  
+        <>
+        {bags.length > 0 ? (
         <>
         {<Bags items={bags}/>}
         <div className={css.calculationBox}>
@@ -33,8 +37,12 @@ const Cart = () => {
             <button type="button" className={css.checkBtn}>Check out</button>
           </div>
         </div>
-        </>
-     );
+    </>
+    ) : (
+        <NoFoundComponent/>
+      )}
+    </>
+    );
 }
  
 export default Cart;

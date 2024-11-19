@@ -1,7 +1,8 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import Cart from "../../views/Cart/Cart";
 import Home from "../../views/Home/Home";
-import Information from "../Information/Information";
+import Reviews from "../../views/Reviews/Reviews";
+import Information from "../../views/Information/Information";
 import Footer from "../Footer/Footer";
 import logo from '../../assets/logo.svg';
 import css from './App.module.css'
@@ -20,6 +21,8 @@ const App = () => {
            `${css.navItem} ${isActive && css.active}`}>Home</NavLink>
          <NavLink to='/cart' className={({ isActive }) => 
            `${css.navItem} ${isActive && css.active}`}>Cart</NavLink>
+          <NavLink to='/reviews' className={({ isActive }) => 
+           `${css.navItem} ${isActive && css.active}`}>Reviews</NavLink> 
           <NavLink to='/information' className={({ isActive }) => 
            `${css.navItem} ${isActive && css.active}`}>Information</NavLink>
         </div>
@@ -36,6 +39,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path='/reviews' element={<Reviews/>}/>
       <Route path='/information' element={<Information/>}/>
     </Routes>
     <Footer/>

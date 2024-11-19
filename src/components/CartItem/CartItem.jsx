@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { removeItemFromCart, changeItemQuantity } from "../../store/cartSlice";
 import { MdClose } from "react-icons/md";
@@ -32,8 +31,8 @@ const CartItem = ({data}) => {
           <h2 className={css.cardValue}>{title}</h2>
         </td>
         <td className={`${css.cardValue} ${css.cardTotalPrice}`}>${totalPrice.toFixed(2)}</td>
-          <td>  
-            <ul className={css.controlQtyBox}>
+          <td className={css.controlQtyBox}>  
+            <ul className={css.controlQtyList}>
                 <li className={css.signValue} onClick={decreaseCounterValue}>-</li>
                 <li className={css.cardValue}>{quantity}</li>
                 <li className={css.signValue} onClick={increaseCounterValue}>+</li>

@@ -1,0 +1,11 @@
+.contentHomeBox {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.filterHomeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

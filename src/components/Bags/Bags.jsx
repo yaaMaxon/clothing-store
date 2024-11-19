@@ -9,11 +9,12 @@ return <table className={css.tableBox} border={1} color='black'>
             <th className={`${css.tableHeadItem} ${css.tableHeadItemProduct}`}>Product</th>
             <th className={`${css.tableHeadItem} ${css.tableHeadItemPrice}`}>Price</th>
             <th className={`${css.tableHeadItem} ${css.tableHeadItemQuantity}`}>Quantity</th>
-            <th className={css.tableHeadItem}>Unit Price</th>
+            <th className={`${css.tableHeadItem} ${css.tableHeadItemUnitPrice}`}>Unit Price</th>
         </tr>
     </thead>
     <tbody>
-      {items && items.map((dataItems) => <CartItem key={dataItems.id} data={dataItems}/>)}
+      {items.length > 0 && items.map((dataItems) => <CartItem key={dataItems.id} data={dataItems}/>
+    )}
     </tbody>
 </table> 
 }

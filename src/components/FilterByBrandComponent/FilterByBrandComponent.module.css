@@ -1,0 +1,30 @@
+.filterBox {
+  background-color: #f6f7f8;
+  border-radius: 7px;
+
+  padding: 25px;
+}
+
+.filterTitle {
+  color: #22262a;
+  font-size: 18px;
+  font-weight: 500;
+
+  margin-bottom: 25px;
+}
+
+.filterText {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.filterList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filterItem {
+  display: flex;
+  justify-content: space-between;
+}

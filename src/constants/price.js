@@ -1,2 +1,2 @@
-export const MIN_PRICE = 0
+export const MIN_PRICE = 50
 export const MAX_PRICE = 1000

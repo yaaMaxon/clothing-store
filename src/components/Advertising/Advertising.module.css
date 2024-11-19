@@ -1,0 +1,53 @@
+.advertisingBox {
+  position: relative;
+
+  display: flex;
+  /* justify-content: center; */
+  background-color: #40bfff;
+  margin-bottom: 70px;
+  padding: 100px 55px 100px 280px;
+}
+
+.advertisingTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  max-width: 350px;
+}
+
+.advertisingTitle {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.advertisingText {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.advertisingBoxForBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.advertisingBtn {
+  cursor: pointer;
+}
+
+.spanForBorder {
+  width: 37px;
+  border-bottom: solid #fff 2px;
+}
+
+.advertisingImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-22%, -68%);
+}

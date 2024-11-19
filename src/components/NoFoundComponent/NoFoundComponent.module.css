@@ -1,0 +1,12 @@
+.noFound {
+  margin-bottom: 100px;
+}
+
+.noFoundText {
+  display: flex;
+  justify-content: center;
+
+  color: #223263;
+  font-size: 54px;
+  font-weight: 700;
+}

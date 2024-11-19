@@ -27,5 +27,5 @@ const cardSlice = createSlice({
     }
 })
 
-export const { setCardItems } = cardSlice.actions;
+// export const { setCardItems } = cardSlice.actions;
 export default cardSlice.reducer;

@@ -4,13 +4,7 @@
 }
 
 .tableHead {
-  display: block;
-  padding: 0px 50px 23px 50px;
   border-bottom: solid #f6f7f8 3px;
-}
-
-.tableHeadList {
-  display: flex;
 }
 
 .tableHeadItem {
@@ -18,16 +12,23 @@
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
+
+  padding-bottom: 23px;
 }
 
 .tableHeadItemProduct {
-  margin-right: 305px;
+  padding-right: 605px;
+  padding-left: 50px;
 }
 
 .tableHeadItemPrice {
-  margin-right: 150px;
+  padding-right: 150px;
 }
 
 .tableHeadItemQuantity {
-  margin-right: 150px;
+  padding-right: 150px;
+}
+
+.tableHeadItemUnitPrice {
+  padding-right: 10px;
 }
